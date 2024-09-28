@@ -3,6 +3,9 @@
   --white-color: #ffffff;
   --black-color: #000000;
   --grey-color: #e2e2e2;
+  --normal-font: 400;
+  --average-font: 500;
+  --bold-font: 700;
 }
 
 * {
@@ -15,7 +18,7 @@
 body {
   font-family: var(--font);
   background-color: var(--white-color);
+  font-weight: var(--normal-font);
   height: 100%;
   width: 100vw;
-  padding: 10px;
 }
