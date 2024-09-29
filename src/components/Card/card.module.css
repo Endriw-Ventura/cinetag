@@ -16,6 +16,11 @@
   padding: 17px;
 }
 
+.button {
+  border: 0;
+  background-color: var(--grey-color);
+}
+
 .icon {
   width: 24px;
   height: 24px;

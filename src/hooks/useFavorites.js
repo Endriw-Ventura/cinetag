@@ -25,5 +25,5 @@ export function useFavorites() {
     setFavorites((prevList) => [...prevList, favorite]);
   }
 
-  return { favorites, changeFavorite };
+  return { favorites, changeFavorite, checkRepeated };
 }
