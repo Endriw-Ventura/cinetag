@@ -13,11 +13,15 @@ export default function Favorites() {
     <MainBody>
       <Banner image={image} />
       <Title>Meus favoritos</Title>
-      <section className={styles.container}>
-        {favorites.map((favorite) => (
-          <Card key={favorite.id} item={favorite} />
-        ))}
-      </section>
+      {favorites.length > 0 ? (
+        <section className={styles.container}>
+          {favorites.map((favorite) => (
+            <Card key={favorite.id} item={favorite} />
+          ))}
+        </section>
+      ) : (
+        <Title>~Sem Favoritos~</Title>
+      )}
     </MainBody>
   );
 }
