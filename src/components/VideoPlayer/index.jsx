@@ -1,9 +1,10 @@
 import { useParams } from "react-router-dom";
 import styles from "./videoPlayer.module.css";
-import videos from "json/db.json";
+import { useVideos } from "hooks/useVideos";
 
 export default function VideoPlayer() {
   const params = useParams();
+  const { videos } = useVideos();
   const video = videos.find((item) => item.id === Number(params.id));
 
   return (
